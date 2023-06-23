@@ -22,15 +22,10 @@ for job_element in job_elements:
 
     Time = timeList[count]['datetime'].split('T')[0]
     count +=1
-
-
-
+    
     print('Title - ' + title_element.text)
     print('Sub_Title - ' + subtitle_element.text.removeprefix('PLUS: '))
     print('Link - ' + "https://www.bensbites.co" + parent_element['href'])
     print('Time - ' + Time)
     print('Image - ' + job_element.find('img')['src'])
     print()
-
-
-
